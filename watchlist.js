@@ -45,4 +45,7 @@ function addToWatchlist(id){
     if(localStorage.length === 0){
         document.getElementsByClassName("enter-page")[0].classList.remove("hide")
     }
+    else if(localStorage.length === 1 && localStorage.key.substring(0,1) !== 't'){
+        document.getElementsByClassName("enter-page")[0].classList.remove("hide")
+    }
 }
